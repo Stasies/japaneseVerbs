@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/japaneseVerbs/static/css/main.08b3b5bc.css",
-    "main.js": "/japaneseVerbs/static/js/main.b6d23807.js",
+    "main.js": "/japaneseVerbs/static/js/main.210734ce.js",
     "index.html": "/japaneseVerbs/index.html",
     "main.08b3b5bc.css.map": "/japaneseVerbs/static/css/main.08b3b5bc.css.map",
-    "main.b6d23807.js.map": "/japaneseVerbs/static/js/main.b6d23807.js.map"
+    "main.210734ce.js.map": "/japaneseVerbs/static/js/main.210734ce.js.map"
   },
   "entrypoints": [
     "static/css/main.08b3b5bc.css",
-    "static/js/main.b6d23807.js"
+    "static/js/main.210734ce.js"
   ]
 }
