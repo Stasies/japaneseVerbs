@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/japaneseVerbs/static/css/main.08b3b5bc.css",
+    "main.js": "/japaneseVerbs/static/js/main.249b9c09.js",
+    "index.html": "/japaneseVerbs/index.html",
+    "main.08b3b5bc.css.map": "/japaneseVerbs/static/css/main.08b3b5bc.css.map",
+    "main.249b9c09.js.map": "/japaneseVerbs/static/js/main.249b9c09.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.08b3b5bc.css",
+    "static/js/main.249b9c09.js"
+  ]
+}
