@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Conjugation from "./Conjugation";
+import Home from "./Home";
+import "./style.css";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { verbs } from "./data";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        {/* <Route path=":verb" element={<Conjugation verb={verbs} />} /> */}
+        {verbs.map((verb, index) => (
+          <Route
+            key={index}
+            path={`/${verb.Romanization}`}
+            element={<Conjugation verbs={verb} />}
+          />
+        ))}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

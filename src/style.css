@@ -1,0 +1,276 @@
+:root {
+  --light-color: #ccd4ff;
+  --dark-color: #031b88;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  background-color: rgb(236, 236, 243);
+}
+/* fonts */
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+a:hover {
+  color: var(--light-color);
+}
+a:visited {
+  color: rgb(197, 103, 119);
+}
+h1 {
+  align-self: flex-start;
+  font-size: 44px;
+  padding: 10px;
+  margin: 50px 150px;
+  width: max-content;
+  border-bottom: 4px solid rgba(161, 171, 218, 0.849);
+}
+p {
+  margin: 10px;
+}
+.info p {
+  color: var(--dark-color);
+}
+
+/* general */
+.container {
+  width: 100vw;
+  height: max-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: scroll;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  empty-cells: show;
+}
+
+/* conjugation-page */
+
+.conjugation-container {
+  flex-direction: row;
+  flex: 4;
+  justify-content: start;
+  align-items: start;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+.conjugation-table {
+  flex: 5;
+  font-size: 20px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  text-transform: capitalize;
+  background-color: white;
+}
+.conjugation-table table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.tables {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  width: auto;
+  margin: 0 150px;
+  margin-bottom: 100px;
+}
+
+thead,
+.table-row-title {
+  color: var(--dark-color);
+  font-weight: bolder;
+  background-color: var(--light-color);
+}
+
+.conjugation-table table td {
+  height: 50px;
+  min-width: 150px;
+}
+
+tr,
+td {
+  padding: 0 10px;
+  border: 1px solid rgba(161, 171, 218, 0.849);
+}
+
+.conjugation-table tr:nth-child(odd) {
+  background-color: whitesmoke;
+}
+
+/* small table left */
+.info-table {
+  letter-spacing: 1px;
+  margin-right: 50px;
+  font-size: 24px;
+  width: 25%;
+  height: max-content;
+  font-weight: bolder;
+  border: 5px solid rgba(161, 171, 218, 0.849);
+  background-color: rgb(255, 255, 255);
+}
+.info {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .tables {
+    margin: 50px;
+  }
+  .conjugation-table {
+    font-size: 18px;
+  }
+  .conjugation-table table td {
+    height: 50px;
+    min-width: 90px;
+  }
+  .info-table {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    margin: 50px 20px 20px 20px;
+  }
+  .tables {
+    margin: 20px;
+  }
+  .conjugation-table {
+    font-size: 18px;
+  }
+  .conjugation-table table td {
+    min-width: 40px;
+    font-size: 14px;
+  }
+  .info-table {
+    margin-right: 20px;
+    font-size: 14px;
+  }
+  p {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 426px) {
+  h1 {
+    margin: 20px;
+    font-size: 24px;
+  }
+  .tables {
+    flex-direction: column;
+  }
+  .info-table {
+    width: auto;
+    margin-bottom: 30px;
+  }
+  .info p {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 376px) {
+  h1 {
+    font-size: 18px;
+  }
+}
+/* homepage */
+
+.go-up {
+  position: fixed;
+  right: 5vw;
+  top: 10vh;
+  cursor: pointer;
+}
+
+.input-container {
+  border: 1px solid rgb(206, 206, 206);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 5px 10px;
+  margin-left: 150px;
+}
+.input-container input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.verb-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  font-size: 18px;
+}
+.verb-table table {
+  background-color: whitesmoke;
+  margin: 50px 150px;
+}
+.verb-table table p {
+  padding: 10px;
+}
+.verb-table-title {
+  height: 50px;
+  background-color: var(--light-color);
+}
+
+.sidebar {
+  flex: 2;
+  height: 100vh;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.sidebar-title {
+  background-color: var(--light-color);
+  height: 50px;
+  width: 100%;
+  margin: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 1025px) {
+  .input-container {
+    margin: 0 150px;
+  }
+  .verb-table table {
+    margin: 50px 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .input-container {
+    margin-left: 50px;
+  }
+  .verb-table {
+    width: auto;
+  }
+  .verb-table table {
+    margin: 50px;
+    width: 100%;
+  }
+  .verb-table table td {
+    min-width: 40px;
+    padding: 5px;
+  }
+}
+@media screen and (max-width: 426px) {
+  .verb-table {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 376px) {
+}
